@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="weather-box">
+            <input type="text" id="cityinput" list="citylist">
+            <button onclick="done()">Find</button>
+            <span class="name" id="city" style="text-transform: capitalize;">Surat</span>
+            <hr>
+            <hr>
+            <div class="flex"
+                style="display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-evenly; gap: 5px;">
+                <div class="humidity"><img style="margin: 13px 55px; width: 40px;" src="asset/img/humidity.png"
+                        alt="humidity">
+                    <span>Humidity</span>
+                    <span id="dis_hum">68</span>
+                </div>
+                <div class="pressure">
+                    <img style="margin: 13px 55px; width: 42px;" src="asset/img/atmospheric.png" alt="pressure">
+                    <span>Pressure</span>
+                    <span id="dis_pre">1002</span>
+                </div>
+                <div class="temper">
+                    <img style="margin: 13px 55px; width: 42px;" src="asset/img/high-temperature.png" alt="temper">
+                    <span>Temperature</span>
+                    <span id="dis_temper">272.39</span>
+                </div>
+                <div class="visib">
+                    <img style="margin: 13px 55px; width: 42px;" src="asset/img/fog.png" alt="visibility">
+                    <span>Visibility</span>
+                    <span id="dis_visib">1000</span>
+                </div>
+                <div class="wind">
+                    <img style="margin: 13px 55px; width: 42px;" src="asset/img/wind.png" alt="wind">
+                    <span>Wind Speed</span>
+                    <span id="dis_wind">78</span>
+                </div>
+                <div class="sea-level">
+                    <img style="margin: 13px 55px; width: 42px;" src="asset/img/tide.png" alt="sea-level">
+                    <span>Sea Level</span>
+                    <span id="dis_sea_level">78</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <datalist id="citylist">
+        <option value="Surat"></option>
+        <option value="Mumbai"></option>
+        <option value="Ahmedabad"></option>
+        <option value="Delhi"></option>
+        <option value="Pune"></option>
+        <option value="Gir"></option>
+        <option value="Rajkot"></option>
+        <option value="Bangalore"></option>
+        <option value="Visakhapatnam"></option>
+        <option value="Hyderabad"></option>
+        <option value="Lucknow"></option>
+        <option value="Indore"></option>
+        <option value="Bhopal"></option>
+        <option value="Meerut"></option>
+        <option value="Chennai"></option>
+        <option value="Warangal"></option>
+        <option value="Jaipur"></option>
+        <option value="Vadodra"></option>
+        <option value="Agra"></option>
+        <option value="Patna"></option>
+        <option value="Srinagar"></option>
+        <option value="Jodhpur"></option>
+        <option value="Chandigarh"></option>
+        <option value="Mahesana"></option>
+        <option value="Aurangabad"></option>
+        <option value="New Delhi"></option>
+    </datalist>
+    <script src="asset/js/jquery-3.7.1.min.js"></script>
+    <script src="asset/js/main.js"></script>
+</body>
+
+</html>
